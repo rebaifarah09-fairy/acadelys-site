@@ -7,15 +7,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-  <script>
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
-
 <body>
 
   <!-- ================= HEADER ================= -->
@@ -45,26 +36,6 @@
     <div></div>
   </div>
 </header>
-
-  <!-- ================= SCRIPT MENU ================= -->
-<script>
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links a');
-
-  // ouvrir / fermer le menu
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-
-  // fermer le menu quand on clique sur un lien
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('active');
-    });
-  });
-</script>
-
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="home">
@@ -200,6 +171,25 @@
     <p>&copy; 2024 Acadelys. Tous droits réservés.</p>
   </footer>
 
+    <!-- ================= SCRIPT MENU ================= -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // ouvrir / fermer le menu
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // fermer le menu quand on clique sur un lien
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
+  
   <!-- ================= SCRIPT FAQ ================= -->
   <script>
     document.querySelectorAll(".faq-item").forEach(item => {
@@ -211,6 +201,7 @@
 
 </body>
 </html>
+
 
 
 
