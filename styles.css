@@ -342,3 +342,7 @@ header {
   }
 }
 
+html {
+  scroll-behavior: smooth; /* défilement fluide */
+}
+
